@@ -48,11 +48,12 @@ for i in (1..5)
         take_input    
 
     elsif ($n==3)
+        this_count=0
         empty_hash=$my_hash.empty?
         if empty_hash==false         
             for i,j in $my_hash do
-                count+=1            
-                print "#{count} Name is #{i}, #{j}  "
+                this_count+=1            
+                print "#{this_count} Name is #{i}, #{j}  "
                 puts                
             end 
             print "Enter Name to Delete"
@@ -82,8 +83,3 @@ for i in (1..5)
         break
     end
 end
-    
-    
-
-
-
